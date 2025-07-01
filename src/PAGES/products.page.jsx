@@ -99,7 +99,7 @@ function ProductsPage() {
         1 <PiShoppingCartBold size={25}></PiShoppingCartBold>
       </div>
       <main className="mt-4 overflow-hidden w-full sm:p-4 border-gray-200 justify-center gap-1 flex flex-wrap mx-auto">
-        <div className="flex flex-rows flex-wrap xl:justify-start justify-center gap-2 sm:px-3 rounded">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center gap-1 sm:px-3 rounded">
           {items.map((i, index) => {
             return (
               <ItemComponent
