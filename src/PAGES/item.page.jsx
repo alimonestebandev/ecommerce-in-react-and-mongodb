@@ -48,6 +48,19 @@ function ItemPage() {
     },
   ];
 
+  const addToCart = () => {
+    const currentCart = localStorage.getItem("cart");
+    var newCart = [localStorage.getItem("selected-item")];
+    if (currentCart) {
+      //Cart exists, add to cart array
+      newCart = [currentCart, ...localStorage.getItem("selected-item")];
+      localStorage.setItem("cart", newCart);
+    } else {
+      //Cart does not exist, create cart array
+      localStorage.setItem("cart", newCart);
+    }
+  };
+
   return (
     <div>
       <Navbar></Navbar>
@@ -112,7 +125,10 @@ function ItemPage() {
               <button className="px-12 mb-3 py-3 font-semibold w-full bg-blue-500 shadow text-white rounded">
                 BUY NOW
               </button>
-              <button className="px-12 py-2 w-full text-blue-400 font-semibold  bg-blue-200 rounded">
+              <button
+                onClick={addToCart}
+                className="px-12 py-2 w-full text-blue-400 font-semibold  bg-blue-200 rounded"
+              >
                 ADD TO CART
               </button>
             </div>
