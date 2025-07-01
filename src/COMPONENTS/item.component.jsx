@@ -14,7 +14,7 @@ function ItemComponent({ item, index, lang }) {
             localStorage.setItem("selected-item", JSON.stringify(item));
           }}
         >
-          <div className="py-1 overflow-hidden relative hover:text-blue-600 text-black bg-white border-gray-100 sm:border-1 xl:h-[360px] rounded-md sm:h-[410px] h-[370px] w-[46vw] sm:w-[27vw] md:w-[20vw] xl:w-[20vw] max-w-[280px] justify-center">
+          <div className="py-1 w-full overflow-hidden relative hover:text-blue-600 text-black bg-white border-gray-100 sm:border-1 xl:h-[355px] rounded-md  h-[370px] justify-center">
             <div className="flex relative">
               <div className="h-56 w-full">
                 <img
