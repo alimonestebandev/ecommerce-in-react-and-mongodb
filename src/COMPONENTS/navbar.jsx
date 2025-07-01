@@ -17,9 +17,12 @@ function navbar() {
           </Link>
         </h1>
         <div className="flex absolute h-[57px] top-[1px] right-0">
-          <button className="px-6 hover:bg-blue-100 font-bold  hover:text-blue-600 hover:border-b-blue-600">
+          <Link
+            to={"/cart"}
+            className="px-6 hover:bg-blue-100 font-bold  hover:text-blue-600 hover:border-b-blue-600"
+          >
             <PiShoppingCartBold size={21}></PiShoppingCartBold>
-          </button>
+          </Link>
           <button className="px-6 hover:bg-blue-100 font-bold  hover:text-blue-600 hover:border-b-blue-600">
             <FaRegUser size={18}></FaRegUser>
           </button>
