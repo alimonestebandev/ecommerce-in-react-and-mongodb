@@ -9,7 +9,7 @@ function ItemComponent({ item, index, lang }) {
     <Slide direction="up" triggerOnce delay={50 * index} duration={300}>
       <Fade triggerOnce>
         <Link
-          to="/vp"
+          to="/product-view"
           onClick={() => {
             localStorage.setItem("selected-item", JSON.stringify(item));
           }}
